@@ -1,0 +1,37 @@
+GET http://localhost:8080
+
+###
+POST http://localhost:8080/new
+Content-Type: application/x-www-form-urlencoded
+
+name=Misha&age=23&login=rez&pass=qwer
+
+###
+POST http://localhost:8080/auth
+Content-Type: application/x-www-form-urlencoded
+
+login=rez&pass=qwer
+###
+POST http://localhost:8080/new
+Content-Type: application/x-www-form-urlencoded
+
+name=Sasha&age=23&login=raz&pass=qwtr
+
+###
+POST http://localhost:8080/auth
+Content-Type: application/x-www-form-urlencoded
+
+login=raz&pass=qwtr
+###
+GET http://localhost:8080/calc?num1=15&num2=3&act=del
+
+###
+GET http://localhost:8080/history
+
+###
+GET http://localhost:8080/log
+
+###
+GET http://localhost:8080/index
+
+###
